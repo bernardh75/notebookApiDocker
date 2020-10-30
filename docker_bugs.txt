@@ -1,0 +1,4 @@
+# Créer l'image docker :
+docker build -t mlproject .
+# Lancer cette image
+docker run -d -p 80:80 mlproject

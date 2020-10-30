@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Input datas</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="col-md-5">
+        <h1 >
+          Veuillez renseigner le Square Feet Living pour obtenir une estimation du prix :
+        </h1>
+        <br>
+        <form action = "/prediction" method = "POST">
+          <p>SQFT Living <input type = "number" name = "input_sqft" style="font-size:18pt;height:120px;width:200px;"/></p>
+          <p><input type = "submit" value = "submit" /></p>
+        </form>
+        {% if error %}
+          <p class="error"><strong>Error:</strong> {{ error }}
+        {% endif %}
+      </div>
+    </div>
+  </body>
+</html>
